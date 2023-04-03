@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(20px);
+}
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2em;
+}
+header ul {
+    position: relative;
+    display: flex;
+    gap: 40px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: floralwhite;
+    font-weight: 500;
+    font-size: 1.25em;
+}
+header ul li.active a,
+header ul li:hover  a
+{
+    color: #70fa00;
+}
+/*Home Stert*/
+#Home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #0e0d0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#Home::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
+    height: 25vw;
+    background: #70fa00;
+    border-top-right-radius: 25vw;
+    border-top-left-radius: 25vw;
+}
+#Home .content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 650px;
+    z-index: 10;
+}
+#Home .content h2{
+    position: relative;
+    font-size: 5em;
+    color: #70fa00;
+}
+#Home .content p{
+    position: relative;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+#Home .content .btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #70fa00;
+    color: #000;
+    text-align: center;
+    padding: 18px 30px;
+    font: 500px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#Home .men{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-width: 90vh;
+}
+/*Home close*/
+#Portfolio,
+#Contack,
+#Service{
+    position: relative;
+    background: #000;
+    min-height: 100vh;
+    padding: 120px 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/*Servis Ster*/
+#Service .secText{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Service .secText h2{
+    font-size: 3em;
+    color: #fff;
+}
+#Service .secText p{
+    max-width: 700px;
+    text-align: center;
+    color: #1e771e;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+#Service .content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+    margin: 40px;
+
+}
+#Service .content .servicesBx{
+    background: #0e0d0d;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid#fff;
+}
+#Service .content .servicesBx:hover{
+    border: 2px solid #70fa00;
+}
+#Service .content .servicesBx img{
+    max-width: 100px;
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+#Service .content .servicesBx:hover img{
+    opacity: 1;
+}
+#Service .content .servicesBx h3{
+    color: #fff;
+    font-weight: 500;
+    color: #70fa00;
+}
+#Service .center{
+    width: 100%;
+    text-align: center;
+}
+#Service .center .btn{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #70fa00;
+    color: #000;
+    text-align: center;
+    padding: 18px 30px;
+    font: 500px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+/*Service Close*/
+/*Portfolio Start*/
+#Portfolio {
+    background: #0e0d0d;
+    text-align: center;
+}
+#Portfolio .content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 40px 0;
+}
+#Portfolio .content .imgBx{
+    position: relative;
+
+}
+#Portfolio .content .imgBx img{
+    max-width: 100%;
+}
+#Portfolio .center{
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #70fa00;
+    color: #000;
+    text-align: center;
+    padding: 18px 30px;
+    font: 500px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+/*Portfolio colest*/
+/*Contack Start*/
+#Contack .content {
+    position: relative;
+    display: inline-block;
+    font-size: 1.25em;
+    max-width: 200px;
+    background: #70fa00;
+    color: #000;
+    text-align: center;
+    padding: 18px 300px;
+    font: 500px;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/*Contack Close*/
+
+
+.secText .p{
+    position: relative;
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+
+/*bacik don */
+/*Profile i phone*/
+@media(max-width: 900px){
+    header{
+        padding: 20px 50px;
+    }
+    header ul{
+        display: none;
+    }
+    header .active ul{
+        position: fixed;
+        left: 0;
+        top: 84px;
+        width: 100%;
+        height: calc(100vh - 84px);
+        background: rgb(50,50,50,0.95);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 10000;
+        gap: 20px;
+    }
+    header .active ul li a{
+        font-size: 2em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .menuToggle::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: translateY(-10px);
+        transition: 0.5s;
+        box-shadow: 0 10px #fff;
+    }
+    .menuToggle::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    header .active .menuToggle::before{
+        transform: translateY(-10px) rotate(45deg);
+        box-shadow: 0 10px #fff;
+    }
+    header .active .menuToggle::after{
+        transform: translateY(-10px) rotate(315deg);
+        box-shadow: 0 10px #fff;
+    }
+    #home{
+        padding: 150px 50px;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    #home .content h2{
+        font-size: 4em;
+    }
+    .btn{
+        max-width: 160px;
+        padding: 10px 20px;
+    }
+    #Home .men{
+        position: absolute;
+        height: 50vh;
+        right: 0;
+    }
+    .secText h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    #Portfolio,
+    #Contack,
+    #Service{
+        padding: 100px 50px 50px;
+    }
+    #Portfolio .content,
+    #Contack .content,
+    #Service .content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width: 700px){
+    #home .content h2{
+        font-size: 3em;
+    }
+    #Home::before{
+        width: 80vw;
+        height: 40vw;
+        border-top-right-radius: 80vw;
+        border-top-left-radius: 80vw;
+    }
+}
+/*Profile i phone clost*/
